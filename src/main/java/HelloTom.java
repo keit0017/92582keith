@@ -14,7 +14,7 @@ public class HelloTom {
         tomcat.setPort(Integer.parseInt(port));
         tomcat.getConnector(); //Creates a default HTTP connector
 
-        tomcat.addWebapp("/", new File("src/main/WebApp2").getAbsolutePath());
+        tomcat.addWebapp("/", new File("reacttestserver").getAbsolutePath());
 
         try {
             tomcat.start();
